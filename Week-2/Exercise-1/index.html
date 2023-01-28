@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Movie Review</title>
+</head>
+<body>
+    <h1>Movie Review Segment</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Provident, iure doloribus.</p>
+    <section class="blog">
+        <div class="expanded-card">
+            <div class="card-header">The Shawshank Redemption</div>
+            <div class="card-body">
+                Over the course of several years, two convicts form a friendship, seeking consolation and, eventually, redemption through basic compassion.Chronicles the experiences of a formerly successful banker as a prisoner in the gloomy jailhouse of Shawshank after being found guilty of a crime he did not commit. <br> The film portrays the man's unique way of dealing with his new, torturous life; along the way he befriends a number of fellow prisoners, most notably a wise long-term inmate named Red
+            </div>
+            <div class="card-image"><img alt="flim" src="img_bg.jpg"></div>
+            <div class="card-footer">Link here</div>
+        </div>
+        <div class="minimised-card">
+            <div class="card">
+                <div class="card-header">Avatar</div>
+                <div class="card-body">A paraplegic Marine dispatched to the moon Pandora on a unique mission becomes torn between following his orders and protecting the world he feels is his home. On the lush alien world of Pandora live the Na'vi, beings who appear primitive but are highly evolved. Because the planet's environment is poisonous, human/Na'vi hybrids, called Avatars, must link to human minds to allow for free movement on Pandora.</div>
+                <div class="card-footer">Link here</div>
+            </div>
+            <div class="card">
+                <div class="card-header">Bhool Bhulaiyaa</div>
+                <div class="card-body">An NRI and his wife decide to stay in his ancestral home, paying no heed to the warnings about ghosts. Soon, inexplicable occurrences cause him to call a psychiatrist to help solve the mystery.</div>
+                <div class="card-footer">Link here</div>
+            </div>
+            <div class="card">
+                <div class="card-header">Kantara</div>
+                <div class="card-body">It involves culture of Kambala and Bhootha Kola. A human and nature conflict where Shiva is a rebel who defends his village and nature. A death leads to war between villagers and evil forces. Will he be able to regain peace in the village?</div>
+                <div class="card-footer">Link here</div>
+            </div>
+        </div>
+    </section>
+    <section class="review-form">
+        <h1>Show your interest by adding names & details of movie you want. We will update the movie review soon</h1>
+        <form action="">
+            <div class="group">
+                <label>Title: </label>
+                <span>
+
+                    <input type="radio" name="title" id="Miss">Miss            
+                    <input type="radio" name="title" id="Mr"> Mr    
+                    <input type="radio" name="title" id="Mrs"> Mrs           
+                </span>
+            </div>
+            <div class="group">
+                <label>First Name: </label>
+                <input type="text" pattern=".{3,}" title="- Must contain 3 or more characters" required>
+            </div>
+            <div class="group">
+                <label>Last Name: </label>
+                <input type="text">
+            </div>
+            <div class="group">
+                <label>Email: </label>
+                <input type="email" required>
+            </div>
+            <div class="group">
+                <label>Phone : </label>
+                <input type="tel" pattern="[0-9]{10}" required title="- Must be 10 digit number">
+            </div>
+            <div class="group">
+                <label>password : </label>
+                <input type="password" pattern="[a-zA-Z0-9]{4,20}" title="- Must be alphanumeric\n - Must contain 4 or more characters" required>
+            </div>
+            <div class="group">
+                <label>confirm password : </label>
+                <input type="password" pattern="[a-zA-Z0-9]{4,20}" title="- Must be alphanumeric" required>
+            </div>
+            <div class="group">
+                <label for="country">Country : </label>
+                <select name="country" id="country">
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                    <option value="USA">USA</option>
+                    <option value="Switzerland">Switzerland</option>
+                    <option value="Germany">Germany</option>
+                    <option value="Australia">Australia</option>
+                    <option value="UK">UK</option>
+                    <option value="Japan">Japan</option>
+                    <option value="Canada">Canada</option>
+                </select> 
+            </div>
+            <div class="group">
+                <span>
+                    <input type="checkbox" required> I agree to the <a href="#"> terms and conditions </a>
+                </span>
+            </div>
+            <div class="group">
+                <button>Submit</button>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
