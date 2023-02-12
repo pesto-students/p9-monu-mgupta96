@@ -9,14 +9,14 @@ function getNumber(resolveTime, rejectTime){
         // Thenable object
         return {
             then(){
-                setTimeout(() => console.log(`custom promise has been RESOLVED after ${resolveTime}ms`), resolveTime)
+                setTimeout(() => console.log(`custom promise has been REJECTED after ${rejectTime}ms`), rejectTime)
             }
         }
     }
     return {
         // Thenable object
         then(){
-            setTimeout(() => console.log(`custom promise has been REJECTED after ${rejectTime}ms`), rejectTime)
+            setTimeout(() => console.log(`custom promise has been RESOLVED after ${resolveTime}ms`), resolveTime)
         }
     }
 }
