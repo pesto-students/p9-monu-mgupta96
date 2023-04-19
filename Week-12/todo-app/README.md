@@ -1,3 +1,11 @@
+# Prerequisite
+- Node js installed on your machine
+- Clone this repo
+- You will find package.json in it
+- Type command 
+- ### `npm install` to install all the packages required. 
+- ### `npm start` to run the app
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

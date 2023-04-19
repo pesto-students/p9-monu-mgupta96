@@ -13,6 +13,7 @@ function AddTask({onAdd}){
         <input
             className="takeInput" 
             placeholder="Take note..."
+            maxLength={30}
             id="inputTask" 
             value={newTask} 
             onChange={(e) => setNewTask(e.target.value)}/>

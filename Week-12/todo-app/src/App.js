@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Tasks from './component/Tasks';
 import AddTask from './component/AddTask';
@@ -6,9 +6,12 @@ import EditTask from './component/EditTask';
 
 function App() {
   const [tasks, setTasks] = useState([
-    {id: 1, name: "Grocery shopping", completed: false},
-    {id: 2, name: "Free hand excercise", completed: false}
+    {id: 1, name: "Keep calm and drink water", completed: false},
+    {id: 2, name: "Grocery shopping", completed: false},
+    {id: 3, name: "Increase efficiency", completed: true},
+    {id: 4, name: "Eliminate one-click thinkgs", completed: true}
   ])
+
 
   const onCheck = (id) => {
     setTasks(tasks.map( task => {
@@ -36,7 +39,8 @@ function App() {
       return task
     }))
   }
-
+ 
+  
   return (
     <div className="App">
       <AddTask onAdd={onAdd}/>
