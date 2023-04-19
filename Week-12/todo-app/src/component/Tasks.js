@@ -3,7 +3,7 @@ import Task from './Task';
 function Tasks({tasks, onCheck, onDelete, onEdit}){
     return (
       <>
-        <div className='unCompleted'>
+        <div className='taskList unCompleted'>
           {
             tasks.filter(task => !task.completed)
                   .map(task => {
@@ -16,7 +16,7 @@ function Tasks({tasks, onCheck, onDelete, onEdit}){
           }
 
         </div>
-        <div className='completed'>
+        <div className='taskList'>
           {
 
             tasks.filter(task => task.completed)

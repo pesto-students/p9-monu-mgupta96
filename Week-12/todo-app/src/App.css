@@ -1,10 +1,10 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+  min-width: 400px;
+  max-width: 700px;
+  width: 100%;
+  margin: 3rem auto;
+  background-color: #282c34;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,26 +13,49 @@
   }
 }
 
-.App-header {
+.takeInput{
   background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  outline: none;
+  padding: 10px;
+  font-size: 18px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+  color: #fff;
+  min-width: 300px;
+  width: 60%;
+  max-width: 700px;
+  margin-bottom: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.taskList{
+  color: #fff;
+  min-width: 300px;
+  width: 50%;
+  max-width: 700px;
+  text-align: left;
+  margin: auto;
+  padding: 10px 0;
+}
+.taskItem{
+  padding: 5px 3px;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 1fr 7fr 1fr 1fr;
+  gap: 5px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.taskItem:hover{
+  border-top: 0.5px solid #666;
+  border-bottom: 0.5px solid #666;
+}
+.taskItem input{
+  height: 22px;
+  width: 22px;
+}
+.ruler{
+  color: #666;
+}
+.completed{
+  text-decoration: line-through;
 }
