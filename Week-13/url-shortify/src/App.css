@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.ioBox{
+  width: 50%;
+  padding: 1rem;
+  background-color: #007cff;
+  margin: 1rem 0;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+}
+.ioBox > image{
+  clip-path: circle(64.2% at 89% 81%);
+  color:aqua ;
+}
+.ioBox input
+{
+  width: 60%;
+  padding: 5px 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.ioBox button{
+  padding: 5px 15px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.ioBox button:active{
+  scale: 1.05;
+}
+
+.ioBox p{
+  margin: 0;
+  width: 40%;
+  padding: 5px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 18px;  
+}
+
+.ioBox p.placeholder{
+  font-style: italic;
+}
+.landingArea{
+  display: flex;
+}
+.landingArea section{
+  align-self: center;
+  text-align: start;
+}
+.landingArea section small{
+  font-size: 50%;
+}
+.landingArea section h1{
+  margin-bottom: 0;
+ font-size: 3rem;
+ letter-spacing: 1.5px;
+}
+nav{
+  position: absolute;
+  top: 0;
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+}
+nav span{
+  display: flex;
+  gap: 2rem;
+}
+nav span li{
+  list-style: none;
+  font-size: 1.2rem;
+}
+nav li.company{
+  list-style: none;
+  font-size: 2rem;
+  font-weight: bolder;
+}
