@@ -22,9 +22,9 @@ function App() {
   const baseUrl = "https://api.shrtco.de/v2/shorten?url=";
   const [shortUrl, setShortUrl] = useState("");
   const [copyText, setCopyText] = useState("Copy")
-  
+  const [longUrl, setLongUrl] = useState("");
   const shortifyURL = async () => {
-    let url = document.getElementById("url").value
+    let url = longUrl
     setCopyText("Copy")
     try{
       let response = await fetch(baseUrl+url);
@@ -80,7 +80,7 @@ function App() {
             <h1>More than just shorter links</h1>
             <small>Build your brand recognition and get detailed insights on how your links are performing!</small>
           </section>
-          <img src={landingImage} width="300"/>
+          <img src={landingImage} alt='Landing Image' width="300"/>
         </div>
 
         <div className="ioBox">
@@ -88,7 +88,8 @@ function App() {
           <input type='text' 
                   id='url'
                   placeholder='Paste link over here...'
-                  // onChange= {(e) => setUrl(e.target.value)}
+                  value = {longUrl}
+                  onChange= {(e) => setLongUrl(e.target.value)}
                   />
           <button onClick={shortifyURL}>Shorten it⚡</button>
         </div>
