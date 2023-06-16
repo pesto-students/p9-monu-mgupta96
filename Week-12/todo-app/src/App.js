@@ -12,7 +12,6 @@ function App() {
     {id: 4, name: "Eliminate one-click thinkgs", completed: true}
   ])
 
-
   const onCheck = (id) => {
     setTasks(tasks.map( task => {
       if(task.id === id){
@@ -40,7 +39,6 @@ function App() {
     }))
   }
  
-  
   return (
     <div className="App">
       <AddTask onAdd={onAdd}/>
